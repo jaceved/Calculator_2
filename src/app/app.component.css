@@ -1,0 +1,47 @@
+
+.maindisplay {
+    background: white;
+    height: 10vh; 
+    font-size: 1rem;
+    text-align: right; 
+    overflow: auto;
+}
+
+.subdisplay {
+    border-bottom: 1px solid black;
+    height: 25%;
+    font-size: 2rem;
+    overflow: auto;
+}
+
+.keypad {
+    height: calc(200% / 3);
+}
+
+.keys { 
+    cursor: pointer;
+ }
+
+.keys:hover {
+    opacity: 1;
+}
+
+.ackey {
+    color: rgb(255, 30, 0);
+    background: black;
+}
+
+.equalkey {
+    color: white;
+    background-color: orangered; 
+}
+
+.numkey {
+    color: skyblue;
+    background-color: black; 
+}
+
+.opkey {
+    color: white;
+    background-color: black; 
+}

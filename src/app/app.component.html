@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <div class="base">
+        <div class="maindisplay">
+           {{ display }}
+        </div>
+        <div class="keypad">
+          <table style="width: 100%;">
+            <tr>
+              <td class="keys ackey" colspan="3" (click)="allClear()">Clear</td>
+              <td class="keys opkey" colspan="1" (click)="logKeyEntry('-')">-</td>
+            </tr>
+            <tr>
+              <td class="keys numkey" (click)="logKeyEntry('7')">7</td>  
+              <td class="keys numkey" (click)="logKeyEntry('8')">8</td>
+              <td class="keys numkey" (click)="logKeyEntry('9')">9</td>  
+              <td class="keys opkey" (click)="logKeyEntry('/')">/</td>
+            </tr>
+            <tr>
+              <td class="keys numkey" (click)="logKeyEntry('4')">4</td>  
+              <td class="keys numkey" (click)="logKeyEntry('5')">5</td>
+              <td class="keys numkey" (click)="logKeyEntry('6')">6</td>  
+              <td class="keys opkey" (click)="logKeyEntry('x')">*</td>
+            </tr>
+            <tr>
+              <td class="keys numkey" (click)="logKeyEntry('3')">3</td>  
+              <td class="keys numkey" (click)="logKeyEntry('2')">2</td>
+              <td class="keys numkey" (click)="logKeyEntry('1')">1</td>  
+              <td class="keys opkey" (click)="logKeyEntry('+')">+</td>
+            </tr>
+            <tr>
+              <td colspan="2" class="keys numkey" (click)="logKeyEntry('0')">0</td>
+              <td class="keys numkey" (click)="logKeyEntry('.')">.</td>  
+              <td class="keys equalkey" (click)="getAnswer()">=</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+   </div>
+</div>
